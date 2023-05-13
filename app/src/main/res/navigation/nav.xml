@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.clontwitter.ui.auth.login.Login"
+        android:label="login"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/accion_login_a_twitts"
+            app:destination="@id/twitts" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/twitts"
+        android:name="com.example.clontwitter.ui.twitts.Twitts"
+        android:label="twitts"
+        tools:layout="@layout/fragment_twitts">
+
+        <action
+            android:id="@+id/accion_twitts_a_nuevoTwitt"
+            app:destination="@id/nuevoTwitt" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nuevoTwitt"
+        android:name="com.example.clontwitter.ui.twitts.nuevoTwitt.NuevoTwitt"
+        android:label="login"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/accion_nuevoTwitt_a_twitts"
+            app:destination="@id/twitts" />
+
+    </fragment>
+
+</navigation>

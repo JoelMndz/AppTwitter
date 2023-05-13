@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+   <data>
+      <variable
+          name="viewmodel"
+          type="com.example.clontwitter.ui.twitts.viewModel.TwittViewModel" />
+   </data>
+   <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@color/primario"
+       tools:context=".ui.twitts.nuevoTwitt.NuevoTwitt">
+
+      <EditText
+          android:text="@={viewmodel.descripcion}"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginBottom="20dp"
+          android:backgroundTint="@android:color/transparent"
+          android:gravity="center|center_vertical"
+          android:hint="Escribe la publicación"
+          android:inputType="textMultiLine"
+          android:textSize="25dp"
+          android:fontFamily="casual"
+          android:maxLines="10"
+          android:maxLength="150"
+          android:padding="10dp"
+          android:scrollbars="vertical"
+          />
+
+      <com.google.android.material.floatingactionbutton.FloatingActionButton
+          android:id="@+id/btnCancelar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="start"
+          android:layout_margin="20dp"
+          android:elevation="8dp"
+          android:src="@drawable/ic_close_24"
+          android:backgroundTint="@color/primario"
+          android:contentDescription="Cancelar"
+          />
+
+      <com.google.android.material.floatingactionbutton.FloatingActionButton
+          android:id="@+id/btnGuardar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom|end"
+          android:layout_margin="20dp"
+          android:elevation="8dp"
+          android:src="@drawable/ic_send"
+          android:backgroundTint="@color/primario"
+          android:contentDescription="Guardar"
+          />
+
+   </FrameLayout>
+</layout>
