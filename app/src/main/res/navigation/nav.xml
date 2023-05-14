@@ -15,6 +15,10 @@
             android:id="@+id/accion_login_a_twitts"
             app:destination="@id/twitts" />
 
+        <action
+            android:id="@+id/accion_login_a_registro"
+            app:destination="@id/registro" />
+
     </fragment>
 
     <fragment
@@ -27,6 +31,10 @@
             android:id="@+id/accion_twitts_a_nuevoTwitt"
             app:destination="@id/nuevoTwitt" />
 
+        <action
+            android:id="@+id/accion_twitts_a_perfil"
+            app:destination="@id/perfil" />
+
     </fragment>
 
     <fragment
@@ -37,6 +45,31 @@
 
         <action
             android:id="@+id/accion_nuevoTwitt_a_twitts"
+            app:destination="@id/twitts" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/registro"
+        android:name="com.example.clontwitter.ui.auth.registro.Registro"
+        android:label="registro"
+        tools:layout="@layout/fragment_registro">
+
+        <action
+            android:id="@+id/accion_registro_a_login"
+            app:destination="@id/login" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/perfil"
+        android:name="com.example.clontwitter.ui.user.perfil.Perfil"
+        android:label="perfil"
+        tools:layout="@layout/fragment_perfil">
+
+        <action
+            android:id="@+id/accion_perfil_a_twitts"
             app:destination="@id/twitts" />
 
     </fragment>

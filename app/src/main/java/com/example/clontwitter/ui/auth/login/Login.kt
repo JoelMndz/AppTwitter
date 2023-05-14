@@ -50,6 +50,9 @@ class Login : Fragment() {
         binding.btnLogin.setOnClickListener{
             it.findNavController().navigate(R.id.accion_login_a_twitts)
         }
+        binding.btnRegistro.setOnClickListener{
+            it.findNavController().navigate(R.id.accion_login_a_registro)
+        }
     }
 
     companion object {

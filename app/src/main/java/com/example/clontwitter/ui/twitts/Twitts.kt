@@ -66,6 +66,9 @@ class Twitts : Fragment() {
         binding.btnAgregar.setOnClickListener {
             it.findNavController().navigate(R.id.accion_twitts_a_nuevoTwitt)
         }
+        binding.btnPerfil.setOnClickListener {
+            it.findNavController().navigate(R.id.accion_twitts_a_perfil)
+        }
     }
 
     private fun setRecyclerView(view:View){
