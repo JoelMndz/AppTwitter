@@ -73,7 +73,6 @@ class Twitts : Fragment() {
 
     private fun setRecyclerView(view:View){
         binding.recyclerView.layoutManager = LinearLayoutManager(view.context)
-        twittViewModel.obtenerTwitts()
         adapter = TwitterAdapter(::eliminarTwitt,::editarTwitt)
         binding.recyclerView.adapter = adapter
 
